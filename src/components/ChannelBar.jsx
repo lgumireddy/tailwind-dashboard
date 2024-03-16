@@ -2,7 +2,22 @@ import { useState } from 'react';
 import { BsHash } from 'react-icons/bs';
 import { FaChevronDown, FaChevronRight, FaPlus } from 'react-icons/fa';
 
-const services = ['px-booking-editor', 'px-booking-details', 'px-cancellations', 'px-payments', 'px-conversations', 'px-booking-preferences', 'px-ledger', 'payments-view-service', 'aoe-rm', 'rm-quotes', 'payments-view-service', 'px-booking-requests'];
+const services = [
+  'px-booking-editor', 
+  'px-booking-details', 
+  'px-cancellations', 
+  'px-payments', 
+  'px-conversations', 
+  'px-booking-preferences', 
+  'px-ledger', 
+  'payments-view-service', 
+  'aoe-rm', 
+  'rm-quotes', 
+  'payments-view-service', 
+  'px-booking-requests',
+  'px-conversation-actions',
+  'reservation-manager-ui'
+];
 const libraries = ['px-entity-authorization'];
 const databases = ['HA_Connect', 'HA_Payments'];
 const flows = ['partner-cancellation', 'booking-request', 'inquiry', 'extra-charge', 'partial-refund', 'payment-schedule'];

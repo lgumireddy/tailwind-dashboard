@@ -1,7 +1,7 @@
-import { BsPlus, BsFillLightningFill, BsGearFill, BsChevronBarLeft } from 'react-icons/bs';
+import { BsPlus, BsFillLightningFill, BsGearFill, BsChevronBarLeft, BsChevronBarRight } from 'react-icons/bs';
 import { FiInfo } from "react-icons/fi";
 
-const SideBar = () => {
+const SideBar = (props) => {
   return (
     <div className="sidebar">
                     
@@ -11,7 +11,11 @@ const SideBar = () => {
         <SideBarIcon icon={<BsFillLightningFill size="20" />} />
         <SideBarIcon icon={<BsGearFill size="20" />} />
         <Divider />
-        <SideBarIcon icon={<BsChevronBarLeft size="22" />} />
+        {props.isOpen
+          ? <SideBarIcon icon={<BsChevronBarLeft size="22" onClick={props.toggleCollapse}/>} />
+          : <SideBarIcon icon={<BsChevronBarRight size="22" onClick={props.toggleCollapse}/>} />
+        }
+        
     </div>
   );
 };
@@ -24,7 +28,6 @@ const SideBarIcon = ({ icon, text = 'tooltip 💡' }) => (
     </span>
   </div>
 );
-
 
 const Divider = () => <hr className="sidebar-hr" />;
 

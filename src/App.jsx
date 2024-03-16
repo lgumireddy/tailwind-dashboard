@@ -1,6 +1,5 @@
-import Channelbar from './components/ChannelBar';
 import ContentContainer from './components/ContentContainer';
-import SideBar from './components/SideBar';
+import CollapsibleContainer from './components/CollapsibleContainer';
 import TopNavigation from './components/TopNavigation';
 
 function App() {
@@ -8,8 +7,7 @@ function App() {
     <div>
       <TopNavigation />
       <div className='flex'>
-        <Channelbar />
-        <SideBar />
+        <CollapsibleContainer />
       </div>
       
       {/* <ContentContainer /> */}
