@@ -11,18 +11,17 @@
 
 @layer components {
   .sidebar {
-    @apply h-screen w-16 flex flex-col;
+    @apply h-screen w-16 flex flex-col
+    bg-white dark:bg-gray-900 shadow-lg;
     padding-top: 2.5rem;
   }
 
   .sidebar-top {
     @apply h-screen w-auto flex flex-col
-    bg-white dark:bg-gray-900 shadow-lg;
   }
 
   .sidebar-bottom {
     @apply h-screen w-auto flex flex-col-reverse
-    bg-white dark:bg-gray-900 shadow-lg;
   }
 
   .sidebar-icon {
