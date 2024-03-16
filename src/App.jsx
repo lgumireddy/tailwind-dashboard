@@ -6,9 +6,8 @@ function App() {
   return (
     <div>
       <TopNavigation />
-      <div className='flex'>
-        <CollapsibleContainer />
-      </div>
+      <CollapsibleContainer />
+      
       
       {/* <ContentContainer /> */}
     </div>

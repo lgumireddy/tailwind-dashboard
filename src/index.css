@@ -11,9 +11,18 @@
 
 @layer components {
   .sidebar {
-    @apply h-screen w-16 flex flex-col
-    bg-white dark:bg-gray-900 shadow-lg;
+    @apply h-screen w-16 flex flex-col;
     padding-top: 2.5rem;
+  }
+
+  .sidebar-top {
+    @apply h-screen w-auto flex flex-col
+    bg-white dark:bg-gray-900 shadow-lg;
+  }
+
+  .sidebar-bottom {
+    @apply h-screen w-auto flex flex-col-reverse
+    bg-white dark:bg-gray-900 shadow-lg;
   }
 
   .sidebar-icon {
@@ -222,6 +231,7 @@
     hover:text-pink-500 dark:hover:text-gray-500
     cursor-pointer;
   }
+
 }
 
 @tailwind utilities;
