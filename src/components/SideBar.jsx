@@ -12,16 +12,16 @@ const SideBar = (props) => {
         <SideBarIcon icon={<BsGearFill size="20" />} />
         <Divider />
         {props.isOpen
-          ? <SideBarIcon icon={<BsChevronBarLeft size="22" onClick={props.toggleCollapse}/>} />
-          : <SideBarIcon icon={<BsChevronBarRight size="22" onClick={props.toggleCollapse}/>} />
+          ? <SideBarIcon onClick={props.toggleCollapse} icon={<BsChevronBarLeft size="22" />} />
+          : <SideBarIcon onClick={props.toggleCollapse} icon={<BsChevronBarRight size="22" />} />
         }
         
     </div>
   );
 };
 
-const SideBarIcon = ({ icon, text = 'tooltip 💡' }) => (
-  <div className="sidebar-icon group">
+const SideBarIcon = ({ onClick, icon, text = 'tooltip 💡' }) => (
+  <div className="sidebar-icon group" onClick={onClick}>
     {icon}
     <span class="sidebar-tooltip group-hover:scale-100">
       {text}
