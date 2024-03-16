@@ -1,11 +1,9 @@
-import TopNavigation from '../TopNavigation';
 import { BsPlusCircleFill } from 'react-icons/bs';
 // import { useState } from 'react';
 
 const ContentContainer = () => {
   return (
     <div className='content-container'>
-      <TopNavigation />
       <div className='content-list'>
         <Post
           name='Ada'
@@ -60,17 +58,9 @@ const ContentContainer = () => {
           ipsum dolor sit amet consectetur adipisicing elit.`}
         />
       </div>
-      <BottomBar />
     </div>
   );
 };
-
-const BottomBar = () => (
-  <div className='bottom-bar'>
-    <PlusIcon />
-    <input type='text' placeholder='Enter message...' className='bottom-bar-input' />
-  </div>
-);
 
 const Post = ({ name, timestamp, text }) => {
 

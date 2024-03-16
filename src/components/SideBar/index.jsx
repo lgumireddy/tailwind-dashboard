@@ -1,18 +1,17 @@
-import { BsPlus, BsFillLightningFill, BsGearFill } from 'react-icons/bs';
-import { FaFire, FaPoo } from 'react-icons/fa';
+import { BsPlus, BsFillLightningFill, BsGearFill, BsChevronBarLeft } from 'react-icons/bs';
+import { FiInfo } from "react-icons/fi";
 
 const SideBar = () => {
   return (
-    <div className="fixed top-0 left-0 h-screen w-16 flex flex-col
-                  bg-white dark:bg-gray-900 shadow-lg">
+    <div className="sidebar">
                     
-        <SideBarIcon icon={<FaFire size="28" />} />
+        <SideBarIcon icon={<FiInfo size="28" />} />
         <Divider />
         <SideBarIcon icon={<BsPlus size="32" />} />
         <SideBarIcon icon={<BsFillLightningFill size="20" />} />
-        <SideBarIcon icon={<FaPoo size="20" />} />
+        <SideBarIcon icon={<BsGearFill size="20" />} />
         <Divider />
-        <SideBarIcon icon={<BsGearFill size="22" />} />
+        <SideBarIcon icon={<BsChevronBarLeft size="22" />} />
     </div>
   );
 };
