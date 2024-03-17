@@ -1,11 +1,11 @@
 import ContentContainer from './components/ContentContainer';
 import CollapsibleContainer from './components/CollapsibleContainer';
-import TopNavigation from './components/TopNavigation';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
     <div>
-      <TopNavigation />
+      <NavigationBar />
       <CollapsibleContainer />
       
       
