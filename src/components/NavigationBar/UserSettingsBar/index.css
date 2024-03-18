@@ -9,7 +9,7 @@
 
     .user-settings-icon {
         @apply text-gray-500
-        mr-3
+        mr-4
         transition duration-300 ease-in-out 
         hover:text-pink-400 
         cursor-pointer;
@@ -17,5 +17,12 @@
 
     .user-settings-name {
         @apply text-xl text-gray-500 tracking-wider font-semibold text-opacity-80 mr-3;
+    }
+
+    .user-settings-dropdown-icon {
+        @apply text-gray-500
+        transition duration-300 ease-in-out 
+        hover:text-pink-400 
+        cursor-pointer;
     }
 }

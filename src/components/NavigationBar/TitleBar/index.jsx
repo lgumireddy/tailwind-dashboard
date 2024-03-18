@@ -13,6 +13,6 @@ const TitleBar = () => {
 };
 
 const HashtagIcon = () => <FaHashtag size='20' className='title-hashtag' />;
-const Title = () => <h5 className='title-text'>spog</h5>;
+const Title = () => <h5 className='title-text'>spog v1.0.0</h5>;
 
 export default TitleBar;
